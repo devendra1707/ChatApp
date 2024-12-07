@@ -9,7 +9,6 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.chat.entity.Message;
 import com.chat.entity.Room;
@@ -17,8 +16,7 @@ import com.chat.entity.repo.RoomRepository;
 import com.chat.payload.MessageRequest;
 
 @Controller
-@RequestMapping
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class ChatController {
 
 	@Autowired
